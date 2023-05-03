@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jenny Chen</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets/styles/home.css">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div class="dropdown">
+            <button id="dropbtn"> <img id="menu" src="assets/img/menu.png" alt=""> </button>
+            <div class="dropdown-content">
+              <a href="gallery.html">galley</a>
+              <a href="drawings.html">drawings</a>
+              <a href="faq.html">faq</a>
+            </div>
+          </div>
+    <header id="moreoptions">
+        <!-- toggle x ray or not -->
+        <div id="togglexray">
+            <div id="xraytext">x-ray</div>
+            <label class="switch">
+                <input type="checkbox" id="xb">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+    <div id="main-content">
+        <div id="moviescreen">
+            <!-- video here -->
+            <video id="plate_coupling" autoplay muted playsinline>
+                <source src="assets/vid/plate_coupling.mp4" />
+            </video>
+            <video id="plate_coupling_x" autoplay muted playsinline>
+                <source src="assets/vid/plate_coupling_x.mp4" />
+            </video>
+            <video id="coupling_cup" autoplay muted playsinline>
+                <source src="assets/vid/coupling_cup.mp4" />
+            </video>
+            <video id="coupling_cup_x" autoplay muted playsinline>
+                <source src="assets/vid/coupling_cup_x.mp4" />
+            </video>
+            <video id="cup_bottle"autoplay muted playsinline>
+                <source src="assets/vid/cup_bottle.mp4" />
+            </video>
+            <video id="cup_bottle_x"autoplay muted playsinline>
+                <source src="assets/vid/cup_bottle_x.mp4" />
+            </video>
+            <video id="bottle_rx"autoplay muted playsinline>
+                <source src="assets/vid/bottle_rx.mp4" />
+            </video>
+            <video id="bottle_rx_x"autoplay muted playsinline>
+                <source src="assets/vid/bottle_rx_x.mp4" />
+            </video>
+            <video id="bottle_tampon"autoplay muted playsinline>
+                <source src="assets/vid/bottle_tampon.mp4" />
+            </video>
+            <video id="bottle_tampon_x"autoplay muted playsinline>
+                <source src="assets/vid/bottle_tampon_x.mp4" />
+            </video>
+            <video id="rx_tampon"autoplay muted playsinline>
+                <source src="assets/vid/rx_tampon.mp4" />
+            </video> 
+            <video id="rx_tampon_x"autoplay muted playsinline>
+                <source src="assets/vid/rx_tampon_x.mp4" />
+            </video>
+        </div>
+        <div id="vid-info">
+            <p id="item1">Item 1</p>
+            <p id="item2">Item 2</p>
+            <br>
+            <p id="result">Name</p>
+        </div>
+    </div>
+
+
+   <div id = "bottom">
+        <div id="molds">
+            <!-- <button class= "objs" id= "plate">
+                <img id="plate" src="assets/img/plate.png" alt="">
+            </button>
+            <button class="objs" id= "coupling"><img id="coupling" src="assets/img//coupling.png" alt=""></button>
+            <button class="objs" id= "dome"><img id="dome" src="assets/img//dome.png" alt=""></button>
+            <button class="objs" id= "solo"><img id="solo" src="assets/img//solo.png" alt=""></button>
+            <button class="objs" id= "bottle"><img id="bottle" src="assets/img//bottle.png" alt=""></button>
+            <button class="objs" id= "rx"><img id="rx" src="assets/img//rx.png" alt=""></button>
+            <button class="objs" id= "tampon"><img id="tampon" src="assets/img//tampon.png" alt=""></button> -->
+            <button class="objs" id= "b1"><img src="assets/img//b1.png" alt=""></button>
+            <button class="objs" id= "b2"><img src="assets/img//b2.png" alt=""></button>
+            <button class="objs" id= "b3"><img src="assets/img//b3.png" alt=""></button>
+            <button class="objs" id= "b4"><img src="assets/img//b4.png" alt=""></button>
+            <button class="objs" id= "b5"><img src="assets/img//b5.png" alt=""></button>
+            <button class="objs" id= "b6"><img src="assets/img//b6.png" alt=""></button>
+        </div>
+        <div id="shelf"></div>
+    </div>
+
+</body>
+
+<script src="assets/scripts/index.js">
+
+</script>
+
+</html>
