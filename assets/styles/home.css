@@ -12,8 +12,9 @@ background #F4ECD8
 
 html {
 	font-family: "Monaco", monospace;
-    font-size: medium;
+  font-size: medium;
 	height: 100%;
+  overflow-y: hidden;
 }
 
 
@@ -206,23 +207,32 @@ video {
 .objs {
   width: 110px;
   height: 110px;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 10%;
   border: none;
   padding: 0px 20px;
   margin: 0px 10px;
   background: #dbd4c3;
   vertical-align: center;
-  -webkit-transition: .6s ease-in-out;
-  transition: .6s ease-in-out;
+  transition: .2s ease-in-out;
+  box-shadow: 0 8px #999;
+
 }
 
 .objs:hover {
-  background: linear-gradient(145deg, #c6c6c6, #848484);
-  -webkit-box-shadow: inset 15px 15px 20px -20px rgba(0,0,0,.5);
-  -moz-box-shadow: inset 15px 15px 20px -20px rgba(0,0,0,.5);
-  box-shadow: inset 15px 15px 20px -20px rgba(113, 113, 113, 0.5);
+  background: rgb(251, 209, 124);
 }
 
+.objs:active {
+  background: rgb(251, 209, 124);
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
+}
+
+.objs:focus {
+  background: rgb(189, 181, 163);
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
+}
 
 #bottom {
     display: flex;
@@ -241,17 +251,6 @@ video {
 }
 
 
-
-#shelf {
-    width: 100%;
-    height: 10px;
-    background: rgb(113, 68, 55);
-}
-
-.active {
-    background:green;
-  }
-
 .greyed {
     filter: grayscale(100%);
 }
@@ -259,4 +258,5 @@ video {
 #credits {
     font-size: x-small;
     margin: 0px;
+    color:#848484;
 }

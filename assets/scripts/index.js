@@ -44,7 +44,6 @@ const b5 = document.getElementById("b5");
 const b6 = document.getElementById("b6");
 
 var prevVid;
-var currVid;
 
 function stopPlaying (v) {
     console.log("was playing " + v )
