@@ -13,19 +13,17 @@ background #F4ECD8
 html {
 	font-family: "Monaco", monospace;
   font-size: medium;
-	height: 100%;
-  overflow-y: hidden;
 }
 
 
 body {
 	padding:0px;
 	margin:0px;
-    min-height: 100vh;
+  height: 100%;
 	display: flex;
 	flex-direction: column;
 	background-color: #F4ECD8;
-    justify-content: space-between;
+  justify-content: space-between;
     
 }
 
@@ -209,8 +207,7 @@ video {
   height: 110px;
   border-radius: 10%;
   border: none;
-  padding: 0px 20px;
-  margin: 0px 10px;
+  margin: 10px 10px;
   background: #dbd4c3;
   vertical-align: center;
   transition: .2s ease-in-out;
@@ -235,19 +232,17 @@ video {
 }
 
 #bottom {
-    display: flex;
-	flex-direction: column;
-    align-items: center;
-    margin-top: auto;
-    margin-bottom: 20px;
+    position: relative;
 }
 
 #molds {
-    width: 50%;
+    width: 100%;
     display: flex;
-	flex-direction: row;
-    justify-content: space-evenly;
+	  flex-direction: row;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 
@@ -256,7 +251,8 @@ video {
 }
 
 #credits {
+    position: absolute;
     font-size: x-small;
-    margin: 0px;
+    bottom: 0px;
     color:#848484;
 }
